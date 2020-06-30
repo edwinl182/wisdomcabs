@@ -212,7 +212,9 @@ header .container {
 header .container .logo {
   line-height: 62px;
 }
-
+header .container .logo a img {
+  height: 5rem;
+}
 .mainmenu-holder ul {
   margin: 0;
   padding: 0;
