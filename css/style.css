@@ -1349,7 +1349,12 @@ header .container .logo a img {
 }
 
 .footer .about-widget img {
-  margin-top: 10px;
+    margin-top: 10px;
+    width: 18rem;
+    background: #fff;
+    padding: 1%;
+    border-radius: 7px;
+    box-shadow: none;
 }
 
 .footer .contact-widget ul.contact-infos {
