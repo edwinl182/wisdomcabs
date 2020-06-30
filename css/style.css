@@ -760,6 +760,7 @@ header .container .logo a img {
   min-height: 115px;
 }
 
+
 .search-result h3 {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
@@ -1041,7 +1042,9 @@ header .container .logo a img {
 }
 
 .single-vehicle-sorter .img-box img {
-  display: inline;
+  width: 32rem;
+  height: 31rem;
+  object-fit: contain;
 }
 
 .single-vehicle-sorter h3 {
