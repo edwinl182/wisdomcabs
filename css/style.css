@@ -938,7 +938,9 @@ header .container .logo a img {
 .what-we-offer .slide-box {
   position: relative;
 }
-
+.full-width-google-map {
+  background: #252525;
+}
 .what-we-offer .slide-box .caption {
   position: absolute;
   bottom: 25px;
