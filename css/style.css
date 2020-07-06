@@ -2195,7 +2195,7 @@ header .container .logo a img {
 .genurent-rate-table-content-wrapper { padding-top: 30px; overflow: hidden; }
 .genurent-rate-table-content-wrapper .genurent-rate-table-content-row:first-child .genurent-rate-column { border: 0px; }
 .genurent-rate-table-content-row { padding-bottom: 15px;}
-.genurent-rate-table-content-row .genurent-rate-column { padding-top: 26px; border-top-width: 1px; border-top-style: solid; }
+.genurent-rate-table-content-row .genurent-rate-column { padding-top: 40px; border-top-width: 1px; border-top-style: solid; }
 .genurent-rate-table-column.genurent-col-1 { padding-top: 26px; }
 .genurent-rate-table-column.genurent-col-1 .rate-table-car-image { display: table-cell; vertical-align: middle; }
 .genurent-rate-table-column.genurent-col-1 .rate-table-car-image img{ display: block; max-width: 156px; height: auto;width: 100%;}
