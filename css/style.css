@@ -944,6 +944,7 @@ header .container .logo a img {
   bottom: 25px;
   left: 0;
   width: 100%;
+  display: none;
   padding: 0 30px;
 }
 
@@ -1175,9 +1176,10 @@ header .container .logo a img {
 
 /* =13 testimonials styles */
 .testimonials {
-  background: #fff url(../img/resources/background-2.jpg) center center no-repeat;
+  /* background: #fff url(../img/resources/background-2.jpg) center center no-repeat; */
   background-size: cover;
   padding-bottom: 70px;
+  background: #ddd;
 }
 
 .testimonials .owl-theme .owl-dots {
