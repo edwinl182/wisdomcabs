@@ -738,6 +738,19 @@ header .container .logo a img {
   color: #BDBDBD;
   font-size: 12px;
 }
+@media(min-width:992px){
+  /* applying flexbox on resolution width > 992px */
+  .d-flex {
+    display: flex;
+  }
+  .align-items-center {
+    align-items: center;
+  }
+  .justify-content-center {
+    justify-content:center;
+  }
+}
+
 
 .ui-selectmenu-menu .ui-menu .ui-menu-item.ui-state-focus,
 .ui-selectmenu-menu .ui-menu .ui-menu-item:hover {
