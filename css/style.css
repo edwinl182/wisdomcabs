@@ -748,6 +748,13 @@ header .container .logo a img {
   border-bottom: 1px solid #FF3720;
   border-top: 1px solid #FF3720;
 }
+.highlight-text {
+  color:#FF3720;
+}
+.highlight-text:hover,
+.highlight-text:focus {
+  color:#707070;
+} 
 
 /* =7 search result styles */
 .search-result {
