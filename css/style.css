@@ -738,6 +738,9 @@ header .container .logo a img {
   color: #BDBDBD;
   font-size: 12px;
 }
+.d-none {
+  display: none;
+}
 @media(min-width:992px){
   /* applying flexbox on resolution width > 992px */
   .d-flex {
