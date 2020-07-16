@@ -212,7 +212,9 @@ header .container {
 header .container .logo {
   line-height: 62px;
 }
-
+header .container .logo a img {
+  height: 5rem;
+}
 .mainmenu-holder ul {
   margin: 0;
   padding: 0;
@@ -736,6 +738,22 @@ header .container .logo {
   color: #BDBDBD;
   font-size: 12px;
 }
+.d-none {
+  display: none;
+}
+@media(min-width:992px){
+  /* applying flexbox on resolution width > 992px */
+  .d-flex {
+    display: flex;
+  }
+  .align-items-center {
+    align-items: center;
+  }
+  .justify-content-center {
+    justify-content:center;
+  }
+}
+
 
 .ui-selectmenu-menu .ui-menu .ui-menu-item.ui-state-focus,
 .ui-selectmenu-menu .ui-menu .ui-menu-item:hover {
@@ -746,6 +764,13 @@ header .container .logo {
   border-bottom: 1px solid #FF3720;
   border-top: 1px solid #FF3720;
 }
+.highlight-text {
+  color:#FF3720;
+}
+.highlight-text:hover,
+.highlight-text:focus {
+  color:#707070;
+} 
 
 /* =7 search result styles */
 .search-result {
@@ -757,6 +782,7 @@ header .container .logo {
 .search-result .single-search-result .img-box {
   min-height: 115px;
 }
+
 
 .search-result h3 {
   font-size: 12px;
@@ -935,12 +961,15 @@ header .container .logo {
 .what-we-offer .slide-box {
   position: relative;
 }
-
+.full-width-google-map {
+  background: #252525;
+}
 .what-we-offer .slide-box .caption {
   position: absolute;
   bottom: 25px;
   left: 0;
   width: 100%;
+  display: none;
   padding: 0 30px;
 }
 
@@ -1039,7 +1068,9 @@ header .container .logo {
 }
 
 .single-vehicle-sorter .img-box img {
-  display: inline;
+  width: 32rem;
+  height: 31rem;
+  object-fit: contain;
 }
 
 .single-vehicle-sorter h3 {
@@ -1170,9 +1201,10 @@ header .container .logo {
 
 /* =13 testimonials styles */
 .testimonials {
-  background: #fff url(../img/resources/background-2.jpg) center center no-repeat;
+  /* background: #fff url(../img/resources/background-2.jpg) center center no-repeat; */
   background-size: cover;
   padding-bottom: 70px;
+  background: #ddd;
 }
 
 .testimonials .owl-theme .owl-dots {
@@ -1347,7 +1379,12 @@ header .container .logo {
 }
 
 .footer .about-widget img {
-  margin-top: 10px;
+    margin-top: 10px;
+    width: 18rem;
+    background: #fff;
+    padding: 1%;
+    border-radius: 7px;
+    box-shadow: none;
 }
 
 .footer .contact-widget ul.contact-infos {
@@ -2181,7 +2218,7 @@ header .container .logo {
 .genurent-rate-table-content-wrapper { padding-top: 30px; overflow: hidden; }
 .genurent-rate-table-content-wrapper .genurent-rate-table-content-row:first-child .genurent-rate-column { border: 0px; }
 .genurent-rate-table-content-row { padding-bottom: 15px;}
-.genurent-rate-table-content-row .genurent-rate-column { padding-top: 26px; border-top-width: 1px; border-top-style: solid; }
+.genurent-rate-table-content-row .genurent-rate-column { padding-top: 40px; border-top-width: 1px; border-top-style: solid; }
 .genurent-rate-table-column.genurent-col-1 { padding-top: 26px; }
 .genurent-rate-table-column.genurent-col-1 .rate-table-car-image { display: table-cell; vertical-align: middle; }
 .genurent-rate-table-column.genurent-col-1 .rate-table-car-image img{ display: block; max-width: 156px; height: auto;width: 100%;}
