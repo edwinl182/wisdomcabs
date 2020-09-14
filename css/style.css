@@ -160,7 +160,9 @@ img {max-width: 100%;}
   background: #FF3720;
   display: inline-block;
 }
-
+.search-result-2 {
+  display: none;
+}
 .section-title h2 span {
   font-size: 32px;
   color: #1A1A1A;
