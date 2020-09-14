@@ -28,8 +28,11 @@ $body = $message_content;
 
 // If all values exist, send the email
 if ( $name && $senderEmail && $body) {
+  $headers = "MIME-Version: 1.0" . "\r\n";
+  $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+  $headers .= "From: " . $name . " <" . $senderEmail . ">";
+ 
   $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
-  $headers = "From: " . $name . " <" . $senderEmail . ">";
   $success = mail( $recipient, $mail_subject, $body, $headers );
 
 
