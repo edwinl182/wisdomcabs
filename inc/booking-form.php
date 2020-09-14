@@ -39,7 +39,7 @@ if ( $name && $senderEmail && $body) {
   if($success == true) {
     echo "<p class='success'>Thanks for contacting us. We will contact you ASAP!</p>";
   } else {
-    echo "<p class='fl'>An Error occured, Please try again later</p>";
+    echo "<p class='success'>An Error occured, Please try again later</p>";
   }
 }
 
