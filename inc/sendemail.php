@@ -13,7 +13,7 @@ $message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subj
 $contact_no = isset($_POST['phone']);
 
 
-$mail_subject = 'A contact request send by' . $name;
+$mail_subject = 'A contact back request send by ' . $name;
 
 // $body = 'Name: '. $name . "\r\n";
 // $body .= 'Email: '. $senderEmail . "\r\n";
