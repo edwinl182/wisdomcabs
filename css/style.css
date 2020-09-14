@@ -2145,6 +2145,13 @@ header .container .logo a img {
 a.text-white:hover,a.text-white:focus{
   color:unset
 }
+.brainsys-brand {
+  color: #f26e4e;
+  font-weight: 700;
+}
+a.brainsys-brand:hover,a.brainsys-brand:focus{
+  color:#f26e4e;
+}
 
 /* =32  single team member styles */
 /* .single-team-member .img-box img {
