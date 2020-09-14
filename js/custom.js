@@ -160,7 +160,7 @@ function contactFormValidation () {
 					required: true
 				}
 			},
-			submitHandler: function (form) { 
+			submitHandler: function (form,e) { 
 				// sending value with ajax request
 				var form = $(form);
 				$.post(form.attr('action'), form.serialize(), function (response) {

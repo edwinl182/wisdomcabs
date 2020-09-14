@@ -11,6 +11,10 @@ $senderEmail = isset( $_POST['email'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/"
 $subject = isset( $_POST['subject'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['subject'] ) : "";
 $message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message'] ) : "";
 
+print_R($_POST);
+exit();
+
+
 $mail_subject = 'A contact request send by' . $name;
 
 $body = 'Name: '. $name . "\r\n";
