@@ -2142,7 +2142,11 @@ header .container .logo a img {
 
 
 /* =32  single team member styles */
-
+/* .single-team-member .img-box img {
+  height: 24rem;
+  object-fit: cover;
+  width: 24rem;
+} */
 .single-team-member .img-box {margin-bottom: 15px;}
 .single-team-member h3 {font-size: 15px; text-transform: capitalize; color: #1a1a1a; font-family: "Montserrat", sans-serif; margin: 0;}
 .single-team-member span {color: #FF3720; font-size: 14px; line-height: 22px; font-style: italic; font-family: 'Open Sans';display: block;margin-top: 10px;}
@@ -2153,8 +2157,14 @@ header .container .logo a img {
   font-size: 15px;
   color: #1a1a1a;
 }
-
-
+a.ui-state-default.ui-state-active {
+    background: #FF3720;
+    color: #fff;
+}
+.ui-datepicker .ui-state-highlight {
+  background: unset;
+  color: unset;
+}
 /* =33  faq page styles */
 
 .faq-page .faq-box {margin-top: 50px;}

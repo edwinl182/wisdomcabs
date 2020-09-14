@@ -22,7 +22,10 @@ function selectInput () {
 		$('.select-input').selectmenu();
 	};
 }
-
+function setSelectOption(value){
+	$(".select-input").val(value);
+	$(".select-input").selectmenu("refresh");
+}
 function priceRanger () {
 	if ($('.price-ranger').length) {
 		$( '.price-ranger #slider-range' ).slider({
@@ -160,7 +163,7 @@ function contactFormValidation () {
 					required: true
 				}
 			},
-			submitHandler: function (form) { 
+			submitHandler: function (form,e) { 
 				// sending value with ajax request
 				var form = $(form);
 				$.post(form.attr('action'), form.serialize(), function (response) {
@@ -342,7 +345,8 @@ function whatWeOfferSlide () {
 
 function datePicker () {
 	if ($('.date-picker').length) {
-		$('.date-picker').datepicker();
+		// $('.date-picker').datepicker();
+		$(".date-picker").datetimepicker();
 	};
 }
 function mobileNavToggler () {

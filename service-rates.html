@@ -21,7 +21,7 @@
 	<![endif]-->
 
 
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.css" />
 
 </head>
 <body>
@@ -124,7 +124,7 @@
 			                        </div>
 			                    </div>
 			                    <div class="genurent-rate-column ">
-			                        <div class="rate-table-price"><a href="javscript:;" class="rate-table-price-text">Book Now </a> <span></span>
+			                        <div class="rate-table-price"><a href="javscript:;" class="rate-table-price-text" data-toggle="modal" onclick="setSelectOption('Intermediate')" data-target="#booking-form">Book Now </a> <span></span>
 			                        </div>
 			                    </div>
 			                    <div class="clear"></div>
@@ -150,7 +150,7 @@
 			                        </div>
 			                    </div>
 			                    <div class="genurent-rate-column ">
-			                        <div class="rate-table-price"><a href="javscript:;" class="rate-table-price-text">Book Now </a> <span></span>
+			                        <div class="rate-table-price"><a href="javscript:;" class="rate-table-price-text" data-toggle="modal" onclick="setSelectOption('Standard')"  data-target="#booking-form">Book Now </a> <span></span>
 			                        </div>
 			                    </div>
 			                    <div class="clear"></div>
@@ -178,7 +178,7 @@
 			                        </div>
 			                    </div>
 			                    <div class="genurent-rate-column ">
-									<div class="rate-table-price"><a href="javscript:;" class="rate-table-price-text">Book Now </a> <span></span>
+									<div class="rate-table-price"><a href="javscript:;" class="rate-table-price-text" data-toggle="modal" onclick="setSelectOption('Premium')" data-target="#booking-form">Book Now </a> <span></span>
 			                        </div>
 			                    </div>
 			                    <div class="clear"></div>
@@ -203,7 +203,7 @@
 			                        </div>
 			                    </div>
 			                    <div class="genurent-rate-column ">
-									<div class="rate-table-price"><a href="javscript:;" class="rate-table-price-text">Book Now </a> <span></span>
+									<div class="rate-table-price"><a href="javscript:;" class="rate-table-price-text" data-toggle="modal" onclick="setSelectOption('Premium Plus')" data-target="#booking-form">Book Now </a> <span></span>
 			                        </div>
 			                    </div>
 			                    <div class="clear"></div>
@@ -230,7 +230,7 @@
 			                        </div>
 			                    </div>
 			                    <div class="genurent-rate-column ">
-									<div class="rate-table-price"><a href="javscript:;" class="rate-table-price-text">Book Now </a> <span></span>
+									<div class="rate-table-price"><a href="javscript:;" class="rate-table-price-text" data-toggle="modal" onclick="setSelectOption('Luxury')" data-target="#booking-form">Book Now </a> <span></span>
 			                        </div>
 			                    </div>
 			                    <div class="clear"></div>
@@ -257,7 +257,7 @@
 			                        </div>
 			                    </div>
 			                    <div class="genurent-rate-column ">
-									<div class="rate-table-price"><a href="javscript:;" class="rate-table-price-text">Book Now </a> <span></span>
+									<div class="rate-table-price"><a href="javscript:;" data-toggle="modal" data-target="#booking-form" onclick="setSelectOption('SUV')" class="rate-table-price-text" data-toggle="modal" data-target="#booking-form">Book Now </a> <span></span>
 			                        </div>
 			                    </div>
 			                    <div class="clear"></div>
@@ -284,7 +284,7 @@
 			                        </div>
 			                    </div>
 			                    <div class="genurent-rate-column ">
-									<div class="rate-table-price"><a href="javscript:;" class="rate-table-price-text">Book Now </a> <span></span>
+									<div class="rate-table-price"><a href="javscript:;" class="rate-table-price-text" onclick="setSelectOption('Premium SUV');" data-toggle="modal" data-target="#booking-form">Book Now </a> <span></span>
 			                        </div>
 			                    </div>
 			                    <div class="clear"></div>
@@ -311,7 +311,7 @@
 			                        </div>
 			                    </div>
 			                    <div class="genurent-rate-column ">
-									<div class="rate-table-price"><a href="javscript:;" class="rate-table-price-text">Book Now </a> <span></span>
+									<div class="rate-table-price"><a href="javscript:;" class="rate-table-price-text" data-toggle="modal"  onclick="setSelectOption('Super Luxury');" data-target="#booking-form">Book Now </a> <span></span>
 			                        </div>
 			                    </div>
 			                    <div class="clear"></div>
@@ -784,7 +784,7 @@
 									<i class="fa fa-phone"></i>
 								</div>
 								<div class="info-text">
-									<p>+91 9980362433</p>
+									<p>+91 9880223031</p>
 								</div>
 							</li>
 							<li>
@@ -792,7 +792,7 @@
 									<i class="fa fa-phone"></i>
 								</div>
 								<div class="info-text">
-									<p>+91 9845674254</p>
+									<p>+91 9880072359</p>
 								</div>
 							</li>
 							<li>
@@ -828,80 +828,51 @@
 				<div class="modal-body">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 					<h3>Send message for Booking: </h3>
-					<form class="contact-form search-form-box" action="inc/booking-form.php">
+					<form class="contact-form search-form-box" action="inc/booking-form.php" method="POST">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-grp">
 									<label>Name <span>*</span></label>
-									<input type="text" name="name" placeholder="Enter your name">
+									<input type="text" name="name" placeholder="Enter your name" required>
 								</div>
 							</div>
 							<div class="col-md-6">
+								<div class="form-grp">
+									<label>Contact Number <span>*</span></label>
+									<input type="text" name="phone" placeholder="Enter your phone" required>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-grp">
+									<label>Vehicle Type: <span>*</span></label>
+									<select name="vehicle_type" class="select-input" required>
+										<option value="Intermediate">Intermediate</option>
+										<option value="Standard">Standard</option>
+										<option value="Premium">Premium</option>
+										<option value="Premium Plus">Premium Plus</option>
+										<option value="Premium SUV">Premium SUV</option>
+										<option value="SUV">SUV</option>
+										<option value="Luxury">Luxury</option>
+										<option value="Super Luxury">Super Luxury</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-grp">
+									<label>Requirement Date: <span>*</span></label>
+									<input type="text" name="date" placeholder="MM/DD/YYYY" autocomplete="off" class="date-picker" required>
+								</div>
+							</div>
+							<div class="col-md-12">
 								<div class="form-grp">
 									<label>Email <span>*</span></label>
-									<input type="text" name="email" placeholder="Enter your email">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-grp">
-									<label>Phone <span>*</span></label>
-									<input type="text" name="phone" placeholder="Enter your phone">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-grp">
-									<label>Try Trip: <span>*</span></label>
-									<select name="trip" class="select-input">
-										<option value="#">Per Hour</option>
-										<option value="#">Per Day</option>
-										<option value="#">Airport Transfer</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-grp">
-									<label>Vehicle: <span>*</span></label>
-									<select name="vehicle" class="select-input">
-										<option value="Black Lincoln MKT">Black Lincoln MKT</option>
-										<option value="Black Lincoln Sedan">Black Lincoln Sedan</option>
-										<option value="Mercedes Grand Sedan">Mercedes Grand Sedan</option>
-										<option value="Black Cadillac Sedan">Black Cadillac Sedan</option>
-										<option value="Cadillac Escalade Limo">Cadillac Escalade Limo</option>
-										<option value="Lincoln Stretch Limo">Lincoln Stretch Limo</option>
-										<option value="Hummer Strecth Limo">Hummer Strecth Limo</option>
-										<option value="Ford Party Bus Limo">Ford Party Bus Limo</option>
-										<option value="Mercedes Party Limo">Mercedes Party Limo</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-grp">
-									<label>Pickup Date: <span>*</span></label>
-									<input type="text" name="date" placeholder="MM/DD/YYYY" class="date-picker">
+									<input type="email" name="email" placeholder="Enter your mail" required>
 								</div>
 							</div>
 							<div class="clear"></div>
-							<div class="col-md-12">
-								<div class="form-grp">
-									<label>Number of Passenger <span>*</span></label>
-									<input type="text" name="passenger" placeholder="xxxxxxx">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-grp">
-									<label>Pickup Location <span>*</span></label>
-									<textarea name="pickup" placeholder="Enter Your message"></textarea>							
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-grp">
-									<label>Destination <span>*</span></label>
-									<textarea name="destination" placeholder="Enter Your message"></textarea>	
-								</div>
-							</div>
 							<div class="col-md-12 clearfix">
-								<label>Additional Note <span>*</span></label>
-								<textarea name="message" placeholder="Enter Your message"></textarea>
+								<label>Reporting Address <span>*</span></label>
+								<textarea name="address" placeholder="Enter Your message" required></textarea>
 								<button type="submit" class="pull-right thm-btn hvr-sweep-to-top">SEND MESSAGE</button>
 							</div>
 						</div>
@@ -949,10 +920,10 @@
 
 	<!-- custom.js -->
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.js"></script>
 	<script src="js/map-script.js"></script>
 	<script src="js/default-map-script.js"></script>
 	<script src="js/custom.js"></script>
-
 
 </body>
 </html>

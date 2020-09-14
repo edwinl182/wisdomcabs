@@ -10,7 +10,7 @@
 	.search-form-box .form-box.submit-handler {width: auto;}
 	.search-form-box .container {padding-bottom: 0;padding-top: 15px;}
 	.call-to-action .icon-box {margin-right: 65px;}
-	.single-team-member .img-box img {width: 100%;}
+	.single-team-member .img-box img {width: 100%;height:unset;}
 	.welcome-section .single-welcome .top-box {min-height: 65px;}
 	.single-vehicle-sorter .bottom-box-wrapper .pull-left {float: none !important;padding: 0 !important;}
 	.blog-3-col.latest-news .single-blog-post .img-box .overlay {margin-top: 0;}
