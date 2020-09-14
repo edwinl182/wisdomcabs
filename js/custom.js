@@ -22,7 +22,10 @@ function selectInput () {
 		$('.select-input').selectmenu();
 	};
 }
-
+function setSelectOption(value){
+	$(".select-input").val(value);
+	$(".select-input").selectmenu("refresh");
+}
 function priceRanger () {
 	if ($('.price-ranger').length) {
 		$( '.price-ranger #slider-range' ).slider({
