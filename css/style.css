@@ -2157,7 +2157,14 @@ header .container .logo a img {
   font-size: 15px;
   color: #1a1a1a;
 }
-
+a.ui-state-default.ui-state-active {
+    background: #FF3720;
+    color: #fff;
+}
+.ui-datepicker .ui-state-highlight {
+  background: unset;
+  color: unset;
+}
 /* =33  faq page styles */
 
 .faq-page .faq-box {margin-top: 50px;}

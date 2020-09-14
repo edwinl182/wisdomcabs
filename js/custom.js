@@ -345,7 +345,8 @@ function whatWeOfferSlide () {
 
 function datePicker () {
 	if ($('.date-picker').length) {
-		$('.date-picker').datepicker();
+		// $('.date-picker').datepicker();
+		$(".date-picker").datetimepicker();
 	};
 }
 function mobileNavToggler () {
