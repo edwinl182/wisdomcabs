@@ -29,10 +29,17 @@ $body = $message_content;
 
 // If all values exist, send the email
 if ( $name && $senderEmail && $message ) {
+  $headers = "MIME-Version: 1.0" . "\r\n";
+  $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+  $headers .= "From: " . $name . " <" . $senderEmail . ">";
+  
   $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
-  $headers = "From: " . $name . " <" . $senderEmail . ">";  
   $success = mail( $recipient, $mail_subject, $body, $headers );
-  echo "<p class='success'>Thanks for contacting us. We will contact you ASAP!</p>";
+  if($success == true) {
+    echo "<p class='success'>Thanks for contacting us. We will contact you ASAP!</p>";
+  } else {
+    echo "<p class='success'>An Error occured, Please try again later</p>";
+  }
 }
 
 ?>
