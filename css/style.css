@@ -2139,7 +2139,12 @@ header .container .logo a img {
 
 .about-content h3 {font-size: 17px;font-family: 'Montserrat';color: #1A1A1A;margin: 0; line-height: 30px;}
 .about-content p {margin: 0; font-size: 12px; line-height: 32px; color: #5F5F5F;}
-
+.text-white {
+  color:white
+}
+a.text-white:hover,a.text-white:focus{
+  color:unset
+}
 
 /* =32  single team member styles */
 /* .single-team-member .img-box img {
