@@ -76,6 +76,12 @@
 @media (max-width: 600px) {
 	.tp-caption {display: none !important;}
 	.blog-page.blog-3-col.latest-news .single-blog-post .img-box .overlay {margin-top: 0;}
+	.search-result-2 {
+		display: block;
+	}
+	.search-result-1 {
+		display:none;
+	}
 }
 @media (max-width: 480px) {
 	header {margin-top: 0;}

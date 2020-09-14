@@ -160,7 +160,9 @@ img {max-width: 100%;}
   background: #FF3720;
   display: inline-block;
 }
-
+.search-result-2 {
+  display: none;
+}
 .section-title h2 span {
   font-size: 32px;
   color: #1A1A1A;
@@ -735,7 +737,7 @@ header .container .logo a img {
   padding-left: 20px;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
-  color: #BDBDBD;
+  color: #000000;
   font-size: 12px;
 }
 .d-none {
